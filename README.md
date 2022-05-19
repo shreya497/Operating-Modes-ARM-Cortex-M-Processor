@@ -1,3 +1,4 @@
 # Operating-Modes-ARM-Cortex-M-Processor
 ARM Cortex-M processor supports two modes of operations:- 1. Thread Mode 2. Handler Mode 
+
 Thread mode can have both Privileged access level and Un-privileged access level. In privileged access level processor has full access to processor resources and in  Un-privileged level processor has restricted access. Thread mode is by default privileged but can be changed to unprivileged access level. But handler mode is always privileged.On reset processor enters into thread mode. Processor enters into thread mode when system exception or interrupt is raised. There are some status registers which will tell whether the processor is in thread mode or handler mode. Interrupt Program Status Register has a field called ISR_NUMBER, if that field is 0 that means code is executing in thread mode, otherwise if it non zero then code is in handler mode. 
